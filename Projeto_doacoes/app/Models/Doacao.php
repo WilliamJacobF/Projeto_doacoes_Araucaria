@@ -12,6 +12,5 @@ class Doacao extends Model
         'localizacao',
         'telefone',
         'email',
-        'outro_contato',
     ];
 }

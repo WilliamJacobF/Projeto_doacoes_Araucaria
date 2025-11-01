@@ -17,7 +17,6 @@ return new class extends Migration
             $table->string('localizacao');
             $table->string('telefone');
             $table->string('email');
-            $table->string('outro contato');
             
             $table->timestamps();
         });
