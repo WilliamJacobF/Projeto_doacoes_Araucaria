@@ -12,12 +12,14 @@
         background: linear-gradient(90deg, #6a11cb, #2575fc);
         -webkit-background-clip: text;
         color: transparent;
+        margin: 5px;
       }
       .subtitulo {
         text-align: center;
         font-family: "Poppins", sans-serif;
         color: #000000ff;
         letter-spacing: 1px;
+        margin-top: 30;
       }
 
       table {
