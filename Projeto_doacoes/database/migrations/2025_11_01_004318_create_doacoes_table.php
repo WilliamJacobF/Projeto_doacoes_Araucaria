@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('doacoes', function (Blueprint $table) {
             $table->id();
             $table->string('descrição');
+            $table->string('doacao_requisitada');
             $table->string('localizacao');
             $table->string('telefone');
             $table->string('email');
