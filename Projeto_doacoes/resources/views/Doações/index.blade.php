@@ -6,67 +6,102 @@
     <title>Doações</title>
     <style>
       body {
-        background-color: #ddddddff ;
-        margin: 0;
-        padding: 0;
+        font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: #f4f6fb;
+      color: #333;
       }
+
       header {
-        padding: 2rem;
-        background-color: gray;
-        margin: 0;
+        background: linear-gradient(135deg, #4e54c8, #8f94fb);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
       }
+      
       .titulo {
-        text-align: center;
-        font-family: "Montserrat", sans-serif;
-        font-size: 60px;
-        background: linear-gradient(90deg, #ffffffff, #ffffffff);
-        -webkit-background-clip: text;
-        color: transparent;
-        margin: 5px;
+        font-size: 3rem;
+      margin-bottom: 10px;
       }
+
       .subtitulo {
-        text-align: center;
-        font-family: "Poppins", sans-serif;
-        color: #ffffffff;
-        font-size: 15px;
-        letter-spacing: 1px;
-        margin-top: 30;
+        font-size: 1.1rem;
+      opacity: 0.9;
+
       }
-      .list {
-        padding-left: 20px;
-        font-family: "Montserrat", sans-serif;
-        color: #000000ff;
-        font-size: 22px;
+      main {
+        max-width: 1200px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
       }
 
       table {
       width: 100%;
-      margin: 20px auto;
       border-collapse: collapse;
-      font-family: "Poppins", sans-serif;
-      font-size: 14px;
+    }
+
+    thead {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+    }
+
+    th, td {
+      padding: 15px;
+      text-align: left;
+      vertical-align: top;
+      border-bottom: 1px solid #eee;
+    }
+
+    th {
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    tbody tr:hover {
+      background-color: #f0f4ff;
+      transition: background 0.3s;
+    }
+
+    td:first-child, th:first-child {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    @media (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
       }
 
       th {
-        background: linear-gradient(45deg, #6a11cb, #2575fc);
-        color: white;
-        padding: 10px;
-        letter-spacing: 1px;
+        display: none;
       }
 
       td {
-        padding: 10px;
-        border-bottom: 1px solid #000000ff;
-        border: 1px solid #000000ff;
+        border: none;
+        position: relative;
+        padding: 10px 15px;
       }
 
-      tr:nth-child(even) {
-        background-color: #fafafa;
+      td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #555;
+        display: block;
+        margin-bottom: 5px;
       }
-
-      tr:hover {
-        background-color: #e3f2fd;
-      }
+    }
     </style>
 </head>
 <body>
@@ -74,7 +109,8 @@
     <h1 class="titulo">Doações Araucária</h1>
     <h2 class="subtitulo">Projeto de extensão em Engenharia de Software voltado à erradicaçãoda pobreza por meio da divulgação de intituições beneficientes</h2>
   </header>
-  <h1 class="list">Listagem de Intituições/Ongs</h1>
+  <main>
+  <h1 class="list"><ul><li>Listagem de Intituições/Ongs</li></ul></h1>
 <table class="table table-hover">
   <thead>
     <tr>
@@ -99,5 +135,6 @@
 @endforeach
   </tbody>
 </table>
+</main>
 </body>
 </html>
