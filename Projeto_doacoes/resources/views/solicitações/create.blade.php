@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formulario</title>
+    <link rel="icon" href="favicond.svg" type="image/png">
     <style>
       body {
       font-family: "Poppins", sans-serif;
@@ -61,9 +62,11 @@
       button:hover {
       background: #5a52e0;
       }
+
     </style>
 </head>
 <body>
+<a href="{{ route('Doações-index') }}">Voltar</a>
 <form action="{{ route('solicitações-store') }}" method="POST">
     @csrf
   <h1>Faça sua solicitação</h1>
@@ -83,6 +86,8 @@
     <input type="text" name="email" class="form-control">
  
   <button type="submit" class="btn btn-primary">Enviar</button>
+  <br>
+  <br>
 </form>
 </body>
 </html>

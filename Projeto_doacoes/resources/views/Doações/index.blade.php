@@ -43,66 +43,66 @@
       table {
       width: 100%;
       border-collapse: collapse;
-    }
+      }
 
-    thead {
+      thead {
       background: linear-gradient(135deg, #6a11cb, #2575fc);
       color: white;
-    }
+      }
 
-    th, td {
+      th, td {
       padding: 15px;
       text-align: left;
       vertical-align: top;
       border-bottom: 1px solid #eee;
-    }
+      }
 
-    th {
+      th {
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 0.05em;
-    }
+      }
 
-    tbody tr:hover {
+      tbody tr:hover {
       background-color: #f0f4ff;
       transition: background 0.3s;
-    }
+      }
 
-    td:first-child, th:first-child {
+      td:first-child, th:first-child {
       text-align: center;
       font-weight: bold;
-    }
+      }
 
-    footer {
+      footer {
       text-align: center;
       padding: 20px;
       font-size: 0.9rem;
       color: #777;
-    }
-
-    @media (max-width: 768px) {
-      table, thead, tbody, th, td, tr {
-        display: block;
       }
 
-      th {
-        display: none;
-      }
+      @media (max-width: 768px) {
+        table, thead, tbody, th, td, tr {
+          display: block;
+        }
 
-      td {
-        border: none;
-        position: relative;
-        padding: 10px 15px;
-      }
+        th {
+          display: none;
+        }
 
-      td::before {
-        content: attr(data-label);
-        font-weight: bold;
-        color: #555;
-        display: block;
-        margin-bottom: 5px;
+        td {
+          border: none;
+          position: relative;
+          padding: 10px 15px;
+        }
+
+        td::before {
+          content: attr(data-label);
+          font-weight: bold;
+          color: #555;
+          display: block;
+          margin-bottom: 5px;
+        }
       }
-    }
 
     .btn {
     background: transparent;
