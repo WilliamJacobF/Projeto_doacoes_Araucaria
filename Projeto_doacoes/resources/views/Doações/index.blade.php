@@ -32,7 +32,7 @@
 
       }
       main {
-        max-width: 1200px;
+      max-width: 1200px;
       margin: 40px auto;
       background: white;
       border-radius: 15px;
