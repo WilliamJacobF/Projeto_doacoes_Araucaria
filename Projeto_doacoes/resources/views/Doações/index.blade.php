@@ -103,6 +103,26 @@
         margin-bottom: 5px;
       }
     }
+
+    .btn {
+    background: transparent;
+    color: #0066ffff;
+    border: 2px solid #0066ffff;
+    padding: 10px 18px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    }
+
+    .btn:hover {
+    background: #0051ffff;
+    color: white;
+    }
+
+    .solicita{
+    height: 100px;
+    margin-left: 100px;
+    }
     </style>
 </head>
 <body>
@@ -137,5 +157,11 @@
   </tbody>
 </table>
 </main>
+<div class="solicita">
+<h1>Como Fazer uma Solicitação?</h1>
+<p>Para aqueles que querem solicitar uma doação ou o cadrastro de uma nova ong/instituição beneficiente. Clique no botão abaixo para a pagina do formulario.</p>
+<br>
+<a href="{{ route('solicitações-create') }}" class="btn">Fazer Solicitação</a>
+</div>
 </body>
 </html>
